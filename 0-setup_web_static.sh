@@ -22,4 +22,4 @@ chown -hR ubuntu:ubuntu /data/
 # Give ownership of the /data/ folder to the ubuntu user AND group 
 sed -i '51 i \\n\tlocation /hbnb_static {\n\talias /data/web_static/current;\n\t}' /etc/nginx/sites-available/default
 # Update the Nginx configuratio
-service nginx restart
+sudo service nginx restart
